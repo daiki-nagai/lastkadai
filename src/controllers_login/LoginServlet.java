@@ -90,7 +90,7 @@ public class LoginServlet extends HttpServlet {
 
                     RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/login/login.jsp");
                     rd.forward(request, response);
-                }else{
+                } else{
                     //認証出来たらログイン状態にしてトップページへリダイレクト
                     request.getSession().setAttribute("login_employee",  e);
 
